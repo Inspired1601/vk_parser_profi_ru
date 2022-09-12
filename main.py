@@ -1,4 +1,4 @@
-﻿import re
+import re
 
 
 class Parser:
@@ -28,12 +28,3 @@ class Parser:
     def extract_urls(self):
         regex = r'((https?:\/\/)[a-zA-Z0-9\.\/\-_]+)'
         return self._extract_data(regex)
-
-
-# Как использовать:
-# 1. Создаёте объект-парсер, передаёте ему текст
-# parser = Parser(text)
-# 2. Вызываете нужные методы, получаете в ответ списки
-# parser.extract_phones()
-# parser.extract_cards()
-# parser.extract_urls()
